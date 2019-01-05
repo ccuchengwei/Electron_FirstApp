@@ -1,18 +1,23 @@
+const electron = require('electron')
 const { app, BrowserWindow } = require('electron')
 
 let win
 
 function createWindow () {
   // 建立瀏覽器視窗。
-  win = new BrowserWindow({ width: 800, height: 600 })
-
+  win = new BrowserWindow({
+     width: 800, 
+     height: 600
+    })
   // 並載入應用程式的 index.html。
   win.loadFile('index.html')
-
+  win.setTitle('0.0')
+  win.setMenu(null)
   // Open the DevTools.
   win.webContents.openDevTools()
 
   // 視窗關閉時會觸發。
+  
   win.on('closed', () => {
     // 拿掉 window 物件的參照。如果你的應用程式支援多個視窗，
     // 你可能會將它們存成陣列，現在該是時候清除相關的物件了。
