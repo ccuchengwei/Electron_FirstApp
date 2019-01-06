@@ -7,18 +7,25 @@
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
     <!-- normal script imports etc  -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>    
+    
     <!-- Insert this line after script imports -->
     <script>if (window.module) module = window.module;</script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
-    <div class="page-wrapper toggled">
-      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-          <i class="fas fa-bars"></i>
-      </a>
-    </div>
+    <nav class="navbar navbar-default bg-dark" role="navigation">
+      
+    </nav>
+    
+    <button id="close" class="btn-dark">
+      test
+    </button>
+    <script src="static/javascripts/index.js"></script> 
+    <p> 
+      yo
 
+    </p>
   </body>
 </html>

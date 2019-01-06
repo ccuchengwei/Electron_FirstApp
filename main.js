@@ -1,5 +1,5 @@
 const electron = require('electron')
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow,ipcMain } = require('electron')
 
 let win
 
@@ -48,3 +48,8 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+ipcMain.on('test', () => {
+  console.log('closed by ipc');
+});
+

@@ -1,0 +1,21 @@
+{
+  "name": "Electron_FirstApp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ccuchengwei <yy316004@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ccuchengwei/Electron_FirstApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1"
+  }
+}
